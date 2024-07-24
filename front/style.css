@@ -56,3 +56,45 @@ header {
     width: 27.3rem;
     height: auto;
 }
+
+.btn-outline-info{
+    width: 27.3rem;
+    height: auto !important; 
+}
+
+/* Estilos para la página de reserva */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    margin-bottom: 20px;
+}
+
+.calendar-input {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.schedule-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.schedule-dropdown {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

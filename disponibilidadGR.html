@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Disponibilidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reserva de Disponibilidad</h1>
+        <div class="calendar-container">
+            <input type="date" id="calendar" class="calendar-input">
+        </div>
+        <div class="schedule-container" id="schedule-container">
+            <label for="schedule">Selecciona un horario:</label>
+            <select id="schedule" class="schedule-dropdown" disabled>
+                <!-- Opciones se agregarán dinámicamente -->
+            </select>
+        </div>
+    </div>
+
+    <script>
+        const calendarInput = document.getElementById('calendar');
+        const scheduleDropdown = document.getElementById('schedule');
+        const scheduleContainer = document.getElementById('schedule-container');
+
+        const horariosDisponibles = {
+            '2024-07-25': ['09:00', '10:00', '11:00'],
+            '2024-07-26': ['13:00', '14:00', '15:00'],
+            '2024-07-27': ['16:00', '17:00']
+        };
+
+        calendarInput.addEventListener('change', (e) => {
+            const selectedDate = e.target.value;
+            const horarios = horariosDisponibles[selectedDate] || [];
+
+            if (horarios.length > 0) {
+                scheduleDropdown.innerHTML = horarios.map(horario => `<option value="${horario}">${horario}</option>`).join('');
+                scheduleDropdown.disabled = false;
+            } else {
+                scheduleDropdown.innerHTML = '';
+                scheduleDropdown.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
