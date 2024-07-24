@@ -1,0 +1,58 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-image: url('../img/cupon-6.jpg'); background-repeat: no-repeat; background-size: cover; background-position: left;
+    padding-bottom: 8rem;
+}
+.img-responsive{
+    width: 100px;
+    height: 70px;
+}
+
+.texto-titulo{
+   
+    background-color: rgba(0, 0, 0, 0.342);
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card h5 {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+
+
+.texto-contactanos{
+    font-size: 200%;
+}
+
+.seccion-linea{
+    background: #0000008a !important;
+    
+}
+
+.seccion-simbolica{
+    
+    background: #562c098e !important;
+    
+}
+
+
+.btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-image{
+    width: 27.3rem;
+    height: auto;
+}
